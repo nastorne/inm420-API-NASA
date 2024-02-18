@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242424;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #f2f2f2;
+}
+
+#input-container {
+    display: flex;
+    width: fit-content;
+    gap: 24px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+label {
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+input,
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+}
+
+button {
+    background-color: #FF4500;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF6347;
+}
+
+#photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
+
+.photo-element {
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #f2f2f2;
+}
+
+.photo-element h3 {
+    font-weight: bold;
+}
+
+.photo-element h4 {
+    font-style: italic;
+}
+
+.nasa-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nasa-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
